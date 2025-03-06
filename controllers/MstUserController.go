@@ -17,7 +17,7 @@ func LoginUser(c *gin.Context) {
 		return
 	}
 
-	users := models.GetUserLogin(loginData["userId"], loginData["email"])
+	users := models.GetUserLogin(loginData["email"])
 	c.IndentedJSON(
 		http.StatusOK,
 		gin.H{"users": users},
