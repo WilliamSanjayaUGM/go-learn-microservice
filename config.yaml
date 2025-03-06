@@ -1,0 +1,12 @@
+serverport: 8080
+environment: dev
+
+database:
+  dev:
+    host: pg-william-testing-williams-project-super-indo.l.aivencloud.com
+    port: 13608
+    username: avnadmin
+    password: pass
+    dbname: defaultdb
+    database: postgres
+    sslmode: sslmode=require
